@@ -1,0 +1,880 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel-inner img {
+    max-height: 600px; /* Adjust the maximum height of the images */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-inner img {
+      max-height: 200px; /* Adjust the maximum height for smaller screens */
+    }
+  }
+
+
+
+
+  /* Your existing CSS styles */
+
+/* Your existing CSS styles */
+
+.fireflies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* Set z-index to a higher value to make sure the fireflies are on top */
+    pointer-events: none;
+  }
+  
+  .firefly {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background-color: rgb(183, 14, 255);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: flicker 2s infinite;
+  }
+  
+  @keyframes flicker {
+    0%, 100% {
+      opacity: 0;
+      transform: translate(0, 0);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(10px, 10px);
+    }
+  }
+  
+  
+
+
+
+
+
+  
+  .content {
+    padding: 2rem;
+    margin-top: 80px;
+  }
+  
+  .navbar {
+    position: relative;
+  }
+  
+  .bg-gradient {
+    background: linear-gradient(90deg,#141314, 
+    #171718);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .nav-item {
+    position: relative;
+  }
+  
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .nav-link:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+
+
+  nav img{
+
+
+     height: 50px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Other existing styles in your styles.css file */
+
+.font-arial-rounded {
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  }
+  
+  .about-section {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-read-more {
+    background-color: #007bff;
+  }
+  
+  .btn-read-more:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .flash-news {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+  
+  .red-bg {
+    background-color: red;
+    padding: 5px;
+    position: relative;
+  }
+  
+  .latest-news {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 15px solid red;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+  
+  marquee {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  marquee span {
+    margin-right: 20px;
+  }
+  
+  
+  
+
+
+  .about {
+    padding: 130px 0;
+}
+
+.about .heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+}
+
+.about .heading h2 span {
+    color: #F24259;
+}
+
+.about .heading p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #999999;
+    margin: 20px 0 60px;
+    padding: 0;
+}
+
+.about h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.about p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #0b0b0b;
+    margin: 20px 0 15px;
+    padding: 0;
+}
+
+.about h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.about h4 i {
+    color: #F24259;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+.top-navbar {
+  background-color: rgb(74, 71, 71);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adding a subtle box shadow for a visual effect */
+}
+
+/* Styling for the logo image container */
+.logo1 {
+  /* Adjust the width and height as per your logo size */
+  width: 150px;
+  height: 30px;
+}
+
+/* Styling for the navigation buttons container */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Styling for the contact button */
+.contact-button {
+  /* Add your desired styles for the button */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Styling for the virtual tour button */
+.virtual-tour-button {
+  /* Add your desired styles for the button */
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.parallax {
+  /* The image used */
+  background-image: url("https://schoolwiki.in/images/7/75/14031_msidheekh.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Your existing CSS styles */
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #eeeeee;
+  padding: 50px 0;
+}
+
+.achievements-video {
+  position: relative;
+  overflow: hidden;
+}
+
+.achievements-video .embed-responsive-16by9::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* 16:9 aspect ratio for 16:9 videos */
+}
+
+.achievements-video .embed-responsive-16by9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.achievements-content {
+  padding-left: 30px;
+}
+
+.achievements-heading {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+  
+}
+
+.achievements-text {
+  font-size: 18px;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #0b0b0b;
+  margin: 20px 0 15px;
+  padding: 0;
+}
+
+/* Other existing styles in your styles.css file */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Your existing CSS styles */
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+/* Bootstrap Card Styles */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 10px;
+  height: 450px; /* Adjust the card height as needed */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.card-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.card-hover .card-body {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.card-hover:hover .card-body {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
+/* Portrait Layout */
+@media (max-width: 767px) {
+  .card {
+    height: auto; /* Set auto height for portrait layout */
+  }
+
+  .card-img-top {
+    height: 250px; /* Adjust the image height as needed for portrait layout */
+  }
+}
+
+
+
+
+
+/* Your existing CSS styles */
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.achievements-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievements-img img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Other existing styles in your styles.css file */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+header {
+  background: url('assets/Project_07-24_Full\ HD\ 1080p_MEDIUM_FR30.mp4') black no-repeat center center scroll;
+  background-size: cover;
+}
+
+header video {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+a,a:hover,a:focus,a:active {
+    text-decoration: none;
+    outline: none;
+}
+
+a,
+a:active,
+a:focus {
+    color: #6f6f6f;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -ms-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+section {
+    padding: 60px 0;
+   /* min-height: 100vh;*/
+}
+
+.sec-title{
+position:relative;
+z-index: 1;
+margin-bottom:60px;
+}
+
+.sec-title .title{
+position: relative;
+display: block;
+font-size: 18px;
+line-height: 24px;
+color: #ff2222;
+font-weight: 500;
+margin-bottom: 15px;
+}
+
+.sec-title h2{
+position: relative;
+display: block;
+font-size:40px;
+line-height: 1.28em;
+color: #222222;
+font-weight: 600;
+padding-bottom:18px;
+}
+
+.sec-title h2:before{
+position:absolute;
+content:'';
+left:0px;
+bottom:0px;
+width:50px;
+height:3px;
+background-color:#d1d2d6;
+}
+
+.sec-title .text{
+position: relative;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+margin-top: 35px;
+}
+
+.sec-title.light h2{
+color: #ffffff;
+}
+
+.sec-title.text-center h2:before{
+left:50%;
+margin-left: -25px;
+}
+
+.list-style-one{
+position:relative;
+}
+
+.list-style-one li{
+position:relative;
+font-size:16px;
+line-height:26px;
+color: #222222;
+font-weight:400;
+padding-left:35px;
+margin-bottom: 12px;
+}
+
+.list-style-one li:before {
+content: "\f058";
+position: absolute;
+left: 0;
+top: 0px;
+display: block;
+font-size: 18px;
+padding: 0px;
+color: #ff2222;
+font-weight: 600;
+-moz-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+font-style: normal;
+font-variant: normal;
+text-rendering: auto;
+line-height: 1.6;
+font-family: "Font Awesome 5 Free";
+}
+
+.list-style-one li a:hover{
+color: #44bce2;
+}
+
+.btn-style-one{
+position: relative;
+display: inline-block;
+font-size: 17px;
+line-height: 30px;
+color: #ffffff;
+padding: 10px 30px;
+font-weight: 600;
+overflow: hidden;
+letter-spacing: 0.02em;
+background-color: #ff2222;
+}
+
+.btn-style-one:hover{
+background-color: #001e57;
+color: #ffffff;
+}
+.about-section{
+position: relative;
+padding: 120px 0 70px;
+}
+
+.about-section .sec-title{
+margin-bottom: 45px;
+}
+
+.about-section .content-column{
+position: relative;
+margin-bottom: 50px;
+}
+
+.about-section .content-column .inner-column{
+position: relative;
+padding-left: 30px;
+}
+
+.about-section .text{
+margin-bottom: 40px;
+font-size: 16px;
+line-height: 26px;
+color: #848484;
+font-weight: 400;
+}
+
+.about-section .list-style-one{
+margin-bottom: 45px;
+}
+
+.about-section .btn-box{
+position: relative;
+}
+
+.about-section .btn-box a{
+padding: 15px 50px;
+}
+
+.about-section .image-column{
+position: relative;
+}
+
+.about-section .image-column .text-layer{
+position: absolute;
+right: -110px;
+top: 50%;
+font-size: 325px;
+line-height: 1em;
+color: #ffffff;
+margin-top: -175px;
+font-weight: 500;
+}
+
+.about-section .image-column .inner-column{
+position: relative;
+padding-left: 120px;
+padding-bottom: 125px;
+}
+
+.about-section .image-column .inner-column:before{
+position: absolute;
+left: -75px;
+top: 65px;
+height: 520px;
+width: 520px;
+background-image:url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
+content: "";
+}
+
+.about-section .image-column .image-1{
+position: relative;
+}
+
+.about-section .image-column .image-2{
+position: absolute;
+left: 0;
+bottom: 0;
+}
+
+.about-section .image-column .image-2 img,
+.about-section .image-column .image-1 img{
+box-shadow: 0 30px 50px rgba(8,13,62,.15);
+}
+
+.about-section .image-column .video-link{
+position: absolute;
+left: 70px;
+top: 170px;
+}
+
+.about-section .image-column .video-link .link{
+position: relative;
+display: block;
+font-size: 22px;
+color: #191e34;
+font-weight: 400;
+text-align: center;
+height: 100px;
+width: 100px;
+line-height: 100px;
+background-color: #ffffff;
+border-radius: 50%;
+box-shadow: 0 30px 50px rgba(8,13,62,.15);
+-webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+}
+
+.about-section .image-column .video-link .link:hover{
+background-color: #191e34;
+
+
+}

@@ -15,7 +15,44 @@
 
 
 
-  
+    <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease, visibility 0.5s ease;
+    }
+    #preloader.hidden {
+      opacity: 0;
+      visibility: hidden;
+    }
+    #preloader img {
+      width: 200px; /* Set the desired width for the image */
+      opacity: 0;
+      animation: fadeInOut 2s infinite;
+    }
+    @keyframes fadeInOut {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 
 
@@ -23,7 +60,10 @@
 
 
 
-
+ <div id="preloader">
+    <!-- Replace 'your_image_path' with the actual path to your image -->
+    <img src="assets/Namlogoct.png" alt="Preloader Image">
+  </div>
 
 
 
@@ -247,6 +287,12 @@ https://dribbble.com/shots/18492971-Web-Design-Portfolio
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script>
+  window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('hidden');
+  });
+</script>
 
   
 

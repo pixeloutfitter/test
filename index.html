@@ -1,204 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>beta stellxr 3</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Slider with Overlay</title>
+  <!-- Add Bootstrap CSS link -->
   <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700&family=Schoolbell&display=swap" rel="stylesheet">
 </head>
-
-
-
-
-
-
-
-
-
-
-<body >
-
-  <div class="preloader-container">
-    <div class="preloader">
-    <svg xmlns="http://www.w3.org/2000/svg" height="200px" width="200px" viewBox="0 0 200 200" class="pencil">
-      <defs>
-        <clipPath id="pencil-eraser">
-          <rect height="30" width="30" ry="5" rx="5"></rect>
-        </clipPath>
-      </defs>
-      <circle transform="rotate(-113,100,100)" stroke-linecap="round" stroke-dashoffset="439.82" stroke-dasharray="439.82 439.82" stroke-width="2" stroke="currentColor" fill="none" r="70" class="pencil__stroke"></circle>
-      <g transform="translate(100,100)" class="pencil__rotate">
-        <g fill="none">
-          <circle transform="rotate(-90)" stroke-dashoffset="402" stroke-dasharray="402.12 402.12" stroke-width="30" stroke="hsl(223,90%,50%)" r="64" class="pencil__body1"></circle>
-          <circle transform="rotate(-90)" stroke-dashoffset="465" stroke-dasharray="464.96 464.96" stroke-width="10" stroke="hsl(223,90%,60%)" r="74" class="pencil__body2"></circle>
-          <circle transform="rotate(-90)" stroke-dashoffset="339" stroke-dasharray="339.29 339.29" stroke-width="10" stroke="hsl(223,90%,40%)" r="54" class="pencil__body3"></circle>
-        </g>
-        <g transform="rotate(-90) translate(49,0)" class="pencil__eraser">
-          <g class="pencil__eraser-skew">
-            <rect height="30" width="30" ry="5" rx="5" fill="hsl(223,90%,70%)"></rect>
-            <rect clip-path="url(#pencil-eraser)" height="30" width="5" fill="hsl(223,90%,60%)"></rect>
-            <rect height="20" width="30" fill="hsl(223,10%,90%)"></rect>
-            <rect height="20" width="15" fill="hsl(223,10%,70%)"></rect>
-            <rect height="20" width="5" fill="hsl(223,10%,80%)"></rect>
-            <rect height="2" width="30" y="6" fill="hsla(223,10%,10%,0.2)"></rect>
-            <rect height="2" width="30" y="13" fill="hsla(223,10%,10%,0.2)"></rect>
-          </g>
-        </g>
-        <g transform="rotate(-90) translate(49,-30)" class="pencil__point">
-          <polygon points="15 0,30 30,0 30" fill="hsl(33,90%,70%)"></polygon>
-          <polygon points="15 0,6 30,0 30" fill="hsl(33,90%,50%)"></polygon>
-          <polygon points="15 0,20 10,10 10" fill="hsl(223,10%,10%)"></polygon>
-        </g>
-      </g>
-    </svg>
-  </div>
-</div>
-</div>
-
-
-  <div class="top-navbar">
-    <div class="">
-      <!-- Your logo image goes here -->
-      
-    </div>
-    <div class="nav-buttons">
-      <button class="contact-button">Contact</button>
-      <button class="virtual-tour-button">Virtual Tour</button>
-    </div>
-  </div>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/Namlogoct.png" height="50px" alt="" srcset=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html" style="color: black;">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="abt.html" style="color: black;">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="facilities.html" style="color: black;">Facilities</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact" style="color: black;">Contact</a>
-              </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light btn-sm my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light" >
+        <a class="navbar-brand" href="#"><img src="https://schoolwiki.in/images/thumb/e/e0/Namlogoct.png/800px-Namlogoct.png" alt="" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color: rgb(0, 0, 0);  font-family: 'Schoolbell', cursive;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"  style="color: rgb(1, 1, 1); font-family: 'Schoolbell', cursive;">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a style="color: rgb(15, 11, 11); font-family: 'Schoolbell', cursive;"class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Clients
+              </a>
+              <div style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a style="color:black; font-family: 'Schoolbell', cursive;" class="dropdown-item" href="#">Burger King</a>
+                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Southwest Airlines</a>
+                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Levi Strauss</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a style="color:black; font-family: 'Schoolbell', cursive;"class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Services
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Print Design</a>
+                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Web Design</a>
+                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Mobile App Development</a>
+              </div>
+            </li>
+            <li style="color:black; font-family: 'Schoolbell', cursive;"class="nav-item">
+              <a style="color:black; font-family: 'Schoolbell', cursive;"class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="form-inline navbar-form">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" style="background-color: black;">Search</button>
+          </form>
         </div>
       </nav>
-      <div class="fireflies"></div>
-      <header>
-
       
-      
-<!--FONT AWESOME-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!--GOOGLE FONTS-->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Ysabeau+Infant:wght@1;100;200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet" />
-
-<!--PLUGIN-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-
-<!--HEADER-->
-<header>
-    <section class="slider">
-        <ul>
-            <li>
-              <article class="center-y padding_2x">
-                <h3 class="big title"><em style="color: #007bff;">NAM HSS</em> Peringathur</h3>
-                <p>EDUCATING FOR WHOLENESS</p>	
-              
-            </article>
-            </li>
-            <li>
-              <article class="center-y padding_2x">
-                <h3 class="big title"><em>NAM HSS</em> Peringathur</h3>
-                <p>EDUCATING FOR WHOLENESS</p>	
-              
-            </article>
-            </li>
-          <li>
-            <article class="center-y padding_2x">
-              <h3 class="big title"><em>NAM HSS</em> Peringathur</h3>
-              <p>EDUCATING FOR WHOLENESS</p>	
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active slider-container">
+        <img src="https://schoolwiki.in/images/b/bc/14031_atal3.jpeg" alt="Image 1" class="slider-img" style="width: 100%;">
+        <div class="overlay">
             
-          </article>
-            </li>
-            <aside>
-                <a href="#"></a>
-                <a href="#"></a>
-              <a href="#"></a>
-            </aside>
-        </ul>
-    </section>
-    <a href="#services" class="cs-down"></a>
-</header>
+          <div class="overlay-text">NAM HSS PERINGATHUR</div>
+        </div>
+      </div>
+      <div class="carousel-item slider-container">
+        <img src="https://schoolwiki.in/images/5/53/14031_bus1.jpeg" alt="Image 2" class="slider-img">
+        <div class="overlay">
+          <div class="overlay-text">NAM HSS PERINGATHUR</div>
+        </div>
+      </div>
 
+      <div class="carousel-item slider-container">
+        <img src="https://schoolwiki.in/images/d/dd/Cover14031-2022.jpeg" alt="Image 2" class="slider-img">
+        <div class="overlay">
+          <div class="overlay-text">NAM HSS PERINGATHUR</div>
+        </div>
+      </div>
+      <!-- Add more carousel items as needed -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-      
   <div class="flash-news">
     <div class="red-bg">
       <div class="latest-news">Latest News <span class="arrow"></span></div>
     </div>
-    <marquee behavior="scroll" direction="left">തിരുവനന്തപുരം (01.02.2023):സംസ്ഥാന തലത്തിൽ മികച്ച അധ്യാപകർക്ക് നൽകിവരുന്ന സാഹിതി ഇന്റർനാഷണൽ ടീച്ചർ ഐക്കൺ അവാർഡ് തിരുവനന്തപുരത്ത് വെച്ച് നടന്ന ചടങ്ങിൽ ബഹു: പ്രതിപക്ഷ നേതാവ് വി ഡി സതീശനിൽ നിന്നും ഹെഡ്‌മാസ്റ്റർ ശ്രീ. പത്മനാഭൻ നടമ്മൽ ഏറ്റുവാങ്ങി. ചടങ്ങിൽ വി സി കബീർ മാസ്റ്റർ, അഡ്വ. പഴകുളം മധു, ഡോ. എ എം ഉണ്ണികൃഷ്ണൻ, ബിന്നി സാഹിതി, നസീർ നൊച്ചാട്, റെജി കിഴക്കുംപുറം, സാം കുരക്കാർ എന്നിവർ സന്നിഹിതരായിരുന്നു.
+    <marquee behavior="scroll" direction="left" style="font-family: 'Noto Sans Malayalam', sans-serif;">തിരുവനന്തപുരം (01.02.2023):സംസ്ഥാന തലത്തിൽ മികച്ച അധ്യാപകർക്ക് നൽകിവരുന്ന സാഹിതി ഇന്റർനാഷണൽ ടീച്ചർ ഐക്കൺ അവാർഡ് തിരുവനന്തപുരത്ത് വെച്ച് നടന്ന ചടങ്ങിൽ ബഹു: പ്രതിപക്ഷ നേതാവ് വി ഡി സതീശനിൽ നിന്നും ഹെഡ്‌മാസ്റ്റർ ശ്രീ. പത്മനാഭൻ നടമ്മൽ ഏറ്റുവാങ്ങി. ചടങ്ങിൽ വി സി കബീർ മാസ്റ്റർ, അഡ്വ. പഴകുളം മധു, ഡോ. എ എം ഉണ്ണികൃഷ്ണൻ, ബിന്നി സാഹിതി, നസീർ നൊച്ചാട്, റെജി കിഴക്കുംപുറം, സാം കുരക്കാർ എന്നിവർ സന്നിഹിതരായിരുന്നു.
     </marquee>
   </div>
-
   
 
-
-  
-  
-  <div class="icon1-row">
-    <div class="icon1">
-      <img src="https://www.pngmart.com/files/14/100-Number-PNG-HD.png" alt="Icon 222" style="height:60px;">
-      <p style="color: black;">WE HAVE SSLC 100% WIN RATE</p>
-    </div>
-    <div class="icon1">
-      <img src="https://www.pngkit.com/png/detail/760-7603646_facilities-red-company-icon-png.png" alt="Icon 222" height="100px">
-      <p style="color: black;">WE HAVE THE BEST FACILITIES</p>
-    </div>
-    <div class="icon1">
-      <img src="https://cdn-icons-png.flaticon.com/512/2070/2070832.png" alt="Icon 222" style="height:100px;">
-      <p style="color: black;">WE HAVE THE BEST TEACHERS</p>
-    </div>
-  </div>
-
-
-  <!-- About Section -->
-  <section class="about-section">
+  <section class="about-section" style="margin-top: -80px;">
     <div class="container">
         <div class="row">                
             <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
                 <div class="inner-column">
                     <div class="sec-title">
                         <span class="title">About Us</span>
-                        <h2>എൻ.എ.എം.എച്ച്.എസ്.എസ് പെരിങ്ങത്തൂർ <br>സ്കൂളിനെക്കുറിച്ച്</h2>
+                        <h2>N.A.M HSS <br>PERINGATHUR</h2>
                     </div>
-                    <div class="text" style="color: black;">കണ്ണൂർ ജില്ലയിലെ തലശ്ശേരി വിദ്യാഭ്യാസ ജില്ലയിൽ ചൊക്ലി ഉപജില്ലയിലെ പെരിങ്ങത്തൂരിലുളള ഒരു എയ്‌ഡഡ്‌ ഹയർ സെക്കണ്ടറി സ്‌കൂളാണ് എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ. പാനൂർ മുനിസിപാലിറ്റിയിൽ കനകമലയുടെ താഴ്​വാരത്ത് പെരിങ്ങത്തൂർ പുഴയുടെ ഓരം ചേർന്ന് പെരിങ്ങത്തൂർ പട്ടണത്തിൽ കടവത്തൂർ റോഡിൽ പെരിങ്ങളം നിയസഭാ മണ്ഡലത്തിലെ ജനകീയനും, വാഗ്മിയും, സർവ്വോപരി നാടിന്റെ വികസന നായകനുമായ മുൻ നിയമസഭാ അംഗം ജനാബ്. എൻ.എ മമ്മു ഹാജിയുടെ നാമധേയത്തിൽ അതി മനോഹരമായ മൂന്നുനില കെട്ടിടത്തിൽ എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ പ്രവർത്തിക്കുന്നു.</div>
+                  <br><br>  <div class="text" style="color: black;">കണ്ണൂർ ജില്ലയിലെ തലശ്ശേരി വിദ്യാഭ്യാസ ജില്ലയിൽ ചൊക്ലി ഉപജില്ലയിലെ പെരിങ്ങത്തൂരിലുളള ഒരു എയ്‌ഡഡ്‌ ഹയർ സെക്കണ്ടറി സ്‌കൂളാണ് എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ. പാനൂർ മുനിസിപാലിറ്റിയിൽ കനകമലയുടെ താഴ്​വാരത്ത് പെരിങ്ങത്തൂർ പുഴയുടെ ഓരം ചേർന്ന് പെരിങ്ങത്തൂർ പട്ടണത്തിൽ കടവത്തൂർ റോഡിൽ പെരിങ്ങളം നിയസഭാ മണ്ഡലത്തിലെ ജനകീയനും, വാഗ്മിയും, സർവ്വോപരി നാടിന്റെ വികസന നായകനുമായ മുൻ നിയമസഭാ അംഗം ജനാബ്. എൻ.എ മമ്മു ഹാജിയുടെ നാമധേയത്തിൽ അതി മനോഹരമായ മൂന്നുനില കെട്ടിടത്തിൽ എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ പ്രവർത്തിക്കുന്നു.</div>
                     <ul class="list-style-one">
                         <li>എസ് എസ് എൽ സി പരീക്ഷയിൽ നൂറു ശതമാനം വിജയം</li>
                         <li>വിദ്യാഭ്യാസ വകുപ്പ്, ഐ.ടി അറ്റ് സ്ക്കൂൾ - ഹരിത വിദ്യാലയം റിയാലിറ്റി ഷോയിൽ നാലാമതെത്തിയ സ്ക്കൂൾ. ഹരിത വിദ്യാലയം ട്രോഫി, പ്രശസ്തി പത്രം,ക്യാഷ് പ്രൈസ് എന്നിവ ലഭിച്ചു.</li>
@@ -213,325 +128,77 @@
             <!-- Image Column -->
             <div class="image-column col-lg-6 col-md-12 col-sm-12">
                 <div class="inner-column wow fadeInLeft">
-                    <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/2slider.jpeg" alt=""></a></figure><br><br><br><br><br><br><br><br><br><br><br>
-                    <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="assets/14031_bus1.jpeg" alt=""></a></figure>
+                    <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images" ><img src="assets/14031_bus1.jpeg" alt="" style="max-width: 100%;
+                      height: auto;"></a></figure><br><br><br>
+                    <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="  assets/2slider.jpeg" alt=" " style="max-width: 100%;
+                      height: auto;"></a></figure>
+                      <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="  assets/2slider.jpeg" alt=" " style="max-width: 100%;
+                        height: auto;"></a></figure>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-  <!-- Our Achievements Section -->
- 
-  <!-- Our Achievements Section -->
-  <section class="achievements-section py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="achievements-video">
-            <!-- Replace the video source with your actual YouTube video embed code -->
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/w5-YTIaChJM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="achievements-content">
-            <h2 class="achievements-heading">അംഗീകാരങ്ങൾ</h2>
-            <div class="gradient-underline"></div>
-            <p class="achievements-text">10) രണ്ടാമത് ശബരീഷ് സ്മാരക സ്കൂൾ വിക്കി പുരസ്കാരം - 2021-22 (ജില്ലാ തലം - മൂന്നാം സ്ഥാനം - കണ്ണൂർ ജില്ല) 9) പ്രഥമ ശബരീഷ് സ്മാരക സ്കൂൾ വിക്കി പുരസ്കാരം - 2018-19 (ജില്ലാ തലം - രണ്ടാം സ്ഥാനം - കണ്ണൂർ ജില്ല) 8) മലയാള മനോരമ പത്രത്തിന്റെ നല്ല പാഠം A+ പുരസ്ക്കാരം (കണ്ണൂർ ജില്ല) (2017-18) 7) മാത്രുഭൂമി പത്രത്തിന്റെ സീഡ് ക്ലബ്ബ് ഹരിത വിദ്യാലയം പുരസ്ക്കാരം (കണ്ണൂർ ജില്ലയിൽ ഒന്നാമത്)</p>
-            <a href="#" class="btn btn-primary btn-lg btn-see-more">See More</a>
-          </div>
-        </div>
-      </div>
+<br><br><div class="body222">
+  <div class="marquee">
+    <div class="marquee__group">
+      <img src='https://schoolwiki.in/images/c/c6/Thangal.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/9/98/Haritha1.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/5/55/Tirur0.jpg/800px-Tirur0.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/4/4d/Pkn_sa.jpg/800px-Pkn_sa.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/7/74/Scoutpresident.jpg/800px-Scoutpresident.jpg' alt=''>
     </div>
-  </section>
-  </header>
-  <br><br>
-  <section class="achievements-section py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 order-md-2">
-          <div class="achievements-img">
-            <img src="assets/2slider.jpeg" alt="Achievements Image" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-6 order-md-1">
-          <div class="achievements-content">
-            <h2 class="achievements-heading">		സൗകര്യങ്ങൾ</h2>
-            <div class="gradient-underline"></div>
-            <p class="achievements-text">അടൽ ടിങ്കറിംഗ് ലാബ്,കമ്പ്യൂട്ടർ ലാബ്,സയൻസ് ലാബ്,സ്&zwj;മാർട്ട് ക്ലാസ് മുറികൾ,ശുദ്ധീകരിച്ച കുടിവെള്ളം,സ്കൂൾ ബസ്,സൗണ്ട് സിസ്റ്റം,തുടങ്ങിയ`നിരവധിസൗകര്യങ്ങൾ എൻ.എ.എം.എച്ച്.എസ്.എസ്_പെരിങ്ങത്തൂരിൽ ഉണ്ട്</p>
-            <a href="#" class="btn btn-primary btn-lg btn-see-more">See More</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="achievements-section py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6 order-md-2">
-          <div class="achievements-img">
-            <img src="https://schoolwiki.in/images/thumb/6/61/14031_library1.jpeg/534px-14031_library1.jpeg" alt="Achievements Image" class="img-fluid">
-          </div>
-        </div>
-        <div class="col-md-6 order-md-1">
-          <div class="achievements-content">
-            <h2 class="achievements-heading">		സ്കൂൾ ലൈബ്രറി</h2>
-            <div class="gradient-underline"></div>
-            <p class="achievements-text">അതിനാൽ പുതിയ പാഠ്യപദ്ധതി അനുസരിച്ച് ലൈബ്രറിയുടെ പ്രസക്തി വർദ്ധിച്ചിരിക്കുന്നു. ലൈബ്രറി ഉപയോഗിച്ചുള്ള കുട്ടികളുടെ സ്വയം പഠനം, പ്രബന്ധാവതരണം, സെമിനാറുകൾ, ചർച്ചകൾ തുടങ്ങിയവയ്ക്ക് വളരെയധികം പ്രാധാന്യമുണ്ട്. പ്രത്യേകിച്ച് ഭാഷാ പഠനത്തിന് ഇത് അനിവാര്യമാണ്. ഓരോ വിഷയവുമായി ബന്ധപ്പെട്ടതും തുടർവായനക്കുള്ളതും കുട്ടികളുടെ ശേഷിക്കനുയോജ്യമായ പുസ്തകങ്ങയും, റഫറൻസ് ഗ്രന്ഥങ്ങളും, ആനുകാലിക പ്രസിദ്ധീകരണങ്ങളും ഗ്രന്ഥശാലയിൽ ലഭ്യമാണ്.</p>
-          
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-    <!-- Your "Our Achievements" section content here -->
-
-
-  <!-- Bootstrap Cards -->
-  <section class="container my-5">
-    <div class="row">
-      <div class="col-md-4 mb-4">
-        <div class="card card-hover">
-          <img class="card-img-top" src="assets/card.png" alt="Card Image 1">
-          <div class="card-body">
-            <h5 class="card-title">അംഗീകാരങ്ങൾ</h5>
-            <button   class="btn btn-primary btn-hover">Click here to see</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card card-hover">
-          <img class="card-img-top" src="assets/card2.png" alt="Card Image 2">
-          <div class="card-body">
-            <h5 class="card-title">സൗകര്യങ്ങൾ</h5>
-            <button   class="btn btn-primary btn-hover">Click here to see</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 mb-4">
-        <div class="card card-hover">
-          <img class="card-img-top" src="assets/card3.png" alt="Card Image 3">
-          <div class="card-body">
-            <h5 class="card-title">ക്ലബ്ബുകൾ </h5>
-            <button   class="btn btn-primary btn-hover">Click here to see</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container42">
-    <div class="box1"></div>
-    <div class="box1"></div>
-  </div>
   
-  <center>
-    <div>
-  <div class="results-summary-container">
-    <div class="confetti">
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-      <div class="confetti-piece"></div>
-    </div>
-    <div class="results-summary-container__result">
-      <div class="heading-tertiary">SSLC Result</div>
-      <div class="result-box">
-        <div class="heading-primary">100%</div>
-        <p class="result"></p>
-      </div>
-      <div class="result-text-box">
-        <div class="heading-secondary"></div>
-        <p class="paragraph">
-          NAM HSS scored 100% SSLC students passed on SSLC examination
-        </p>
-      </div>
-    </div>
-    <div class="results-summary-container__options">
-      <div class="heading-secondary heading-secondary--blue">SSLC win rate</div>
-      <div class="summary-result-options">
-        <div class="result-option result-option-reaction">
-          <div class="icon-box">
-            <svg viewBox="0 0 20 20" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#F55"></path>
-            </svg>
-            <span class="reaction-icon-text">2021-22</span>
-          </div>
-          <div class="result-box"><span>100</span> / 100</div>
-        </div>
-        <div class="result-option result-option-memory">
-          <div class="icon-box">
-            <svg viewBox="0 0 20 20" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#FFB21E"></path>
-              <path d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#FFB21E"></path>
-              <path d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#FFB21E"></path>
-            </svg>
-            <span class="memory-icon-text">2020-21</span>
-          </div>
-          <div class="result-box"><span>100</span> / 100</div>
-        </div>
-        <div class="result-option result-option-verbal">
-          <div class="icon-box">
-            <svg viewBox="0 0 20 20" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#00BB8F"></path>
-            </svg>
-            <span class="verbal-icon-text">2019-20</span>
-          </div>
-          <div class="result-box"><span>100</span> / 100</div>
-        </div>
-        <div class="result-option result-option-Visual">
-          <div class="icon-box">
-            <svg viewBox="0 0 20 20" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#1125D6"></path>
-              <path d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z" stroke-width="1.25" stroke-linejoin="round" stroke-linecap="round" stroke="#1125D6"></path>
-            </svg>
-            <span class="visual-icon-text">2018-19</span>
-          </div>
-          <div class="result-box"><span>100</span> / 100</div>
-        </div>
-        <div class="summary__cta">
-         
-        </div>
-      </div>
+    <div aria-hidden="true" class="marquee__group">
+      <img src='https://schoolwiki.in/images/c/c6/Thangal.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/9/98/Haritha1.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/5/55/Tirur0.jpg/800px-Tirur0.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/4/4d/Pkn_sa.jpg/800px-Pkn_sa.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/7/74/Scoutpresident.jpg/800px-Scoutpresident.jpg' alt=''>
     </div>
   </div>
   
+  <div class="marquee marquee--borders" style="--duration: 100s">
+    <div class="marquee__group">
+      <p>THE STORY OF GLORY</p>
+      <p aria-hidden="true">TTHE STORY OF GLORY</p>
+      <p aria-hidden="true">THE STORY OF GLORY</p>
+    </div>
   
+    <div aria-hidden="true" class="marquee__group">
+      <p>THE STORY OF GLORY</p>
+      <p>THE STORY OF GLORY</p>
+      <p>THE STORY OF GLORYh</p>
+    </div>
   </div>
   
+ <div class="marquee marquee--reverse">
+    <div class="marquee__group">
+      <img src='https://schoolwiki.in/images/thumb/c/cd/Onam140311.jpg/800px-Onam140311.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/9/9e/Namnp1.jpg/1024px-Namnp1.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/c/cd/Phdnar.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/5/57/14031_sahithi.jpg/1024px-14031_sahithi.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/9/95/Namwiki1.jpg' alt=''>
+    </div>
+  
+    <div aria-hidden="true" class="marquee__group">
+      <img src='https://schoolwiki.in/images/thumb/c/cd/Onam140311.jpg/800px-Onam140311.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/9/9e/Namnp1.jpg/1024px-Namnp1.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/c/cd/Phdnar.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/thumb/b/b1/14031_office.jpg/1024px-14031_office.jpg' alt=''>
+      <img src='https://schoolwiki.in/images/9/95/Namwiki1.jpg' alt=''>
+    </div>
+  </div>
+  </div>
 
+<br><br><div class="parallax"></div>
   
-  <!-- Google Sites Style Segment -->
-
-<!-- Events Section -->
-<br><br><br><center> <h1>EVENTS</h1></center>
-<div class="events-section" style="background-color: black;">
-  
-  <div class="event hello132">
-    <img src="https://freedomfest2023.in/wp-content/uploads/2023/07/ff2023-logo-120-200.png" alt="Event 1">
- 
-    <h3>FREEDOM FEST</h3>
-    <p></p>
-  </div>
-  <div class="event hello133">
-    <img src="https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/08/06165030/Hiroshima-Day-2021-e1691320840881.jpg" alt="Event 2">
-    <h3>HIROSHIMA DAY</h3>
-    <p></p>
-  </div>
-  <div class="event hello134">
-    <img src="https://img.jagranjosh.com/images/2022/August/1482022/compress_independence_quiz.jpg" alt="Event 3">
-    <h3>AUG-15 QUIZ</h3>
-    <p></p>
-  </div>
+<div class="parallax-images">
+  <img src="assets/14031_itlab2.jpeg" alt="">
+  <img src="assets/14031_sciencelab1.jpg" alt="">
+  <img src="assets/14031_atal4.jpeg" alt="">
 </div>
 
-  
- 
-
-
-    <div class="section-container" style="background-color: rgb(203, 228, 251);">
-      <div class="section-image">
-        <img src="https://schoolwiki.in/images/5/5e/LK2022_1.jpeg" alt="Image">
-      </div>
-      <div class="section-content">
-        <h2>ലിറ്റിൽകൈറ്റ്സ്</h2>
-        <p style="color: black;">
-          ഹൈടെക് സ്കൂൾ പ്രൊജക്ടിന്റെ ഭാഗമായി വിദ്യാലയങ്ങളിൽ പ്രവർത്തിക്കുന്ന കുട്ടികളുടെ ഐ.ടി കൂട്ടായ്മയാണ് " ലിറ്റിൽ കൈറ്റ്സ്". 24 കുട്ടികൾ അംഗങ്ങളായുള്ള ഒരു യൂനിറ്റ് (യൂനിറ്റ് നമ്പർ: LK/2018/14031) ഞങ്ങളുടെ സ്കൂളിൽ പ്രവർത്തിച്ചു വരുന്നു. വിദഗ്ധ പരിശീലനം ലഭിച്ച രണ്ട് അധ്യാപകർ ക്ലബിന് നേതൃത്വം നൽകുന്നു. ആനിമേഷൻ, പ്രോഗ്രാമിങ്, മൊബൈൽ ആപ്പ് നിർമ്മാണം, ഗ്രാഫിക് ഡിസൈനിങ്, സൈബർ സുരക്ഷ എന്നിങ്ങനെ വിവിധ മേഖലകളിൽ കുട്ടികൾക്ക് പരിശീലനം നൽകി വരുന്നു. കൂടാതെ വിദഗ്ധരുടെ ക്ലാസ്സുകൾ, ക്യാമ്പുകൾ എന്നിവയും സംഘടിപ്പിക്കുന്നു.
-        </p>
-        <button>Click Me</button>
-      </div>
-    </div>
-
-
-    
-    <div class="section-container" style="background-color: rgb(196, 124, 36);">
-      <div class="section-image">
-        <img src="https://schoolwiki.in/images/6/63/Spc4.jpg" alt="Image">
-      </div>
-      <div class="section-content">
-        <h2  style="color: white;">സ്റ്റുഡന്റ് പോലീസ് കേഡറ്റ്സ്</h2>
-        <p style="color: white;">
-          ജാഗരൂകവും, സമാധാനപരവും, വികസനോന്മുഖമായ ഒരു സമൂഹ സൃഷ്ടിക്കായി അച്ചടക്കം, ഉത്തരവാദിത്തബോധം, സാമൂഹ്യ പ്രതിബദ്ധത, സേവന സന്നദ്ധത തുടങ്ങിയ ലക്ഷ്യങ്ങൾ മുൻനിർത്തി പ്രവർത്തിക്കുന്ന ഒരു വിദ്യാർത്ഥി കർമ്മസേനയാണ് സ്റ്റുഡന്റ് പോലീസ് കേഡറ്റ് (എസ്.പി.സി) സംസ്ഥാന വിദ്യാഭ്യാസ വകുപ്പും ആഭ്യന്തര വകുപ്പും സംയുക്തമായി നടപ്പിലാക്കുന്ന എസ്.പി.സി യുടെ ആൺകുട്ടികൾക്കും, പെൺകുട്ടികൾക്കുമായുള്ള രണ്ട് യൂനിറ്റുകൾ സ്കൂളിൽ പ്രവർത്തിച്ചു വരുന്നു.
-        </p>
-        <button>Click Me</button>
-      </div>
-    </div>
-
-
-
-
-    
-    <div class="section-container" style="background-color: rgb(36, 36, 61);">
-      <div class="section-image">
-        <img src="https://schoolwiki.in/images/thumb/8/8a/14031_ncc2.jpeg/1280px-14031_ncc2.jpeg" alt="Image">
-      </div>
-      <div class="section-content">
-        <h2  style="color: white;">നാഷണൽ കേഡറ്റ് കോർ</h2>
-        <p style="color: white;">
-          ന്യൂഡൽഹി ആസ്ഥാനമായി പ്രവർത്തിക്കുന്ന ഇന്ത്യൻ സൈന്യത്തിന്റെ സഹായക നിരയായി സംഘടനകളിലൊന്നാണ് നാഷണൽ കാഡറ്റ് കോർ അഥവാ എൻ.സി.സി. എൻ.സി.സി.യിൽ കര, നാവിക, വ്യോമ സേനകൾക്ക് അവയുടെ വിങ്ങുകൾ ഉണ്ട്. കേഡറ്റുകൾക്ക് അടിസ്ഥാന സൈനിക ക്ലാസ്സുകളും, ലഘു ആയുധങ്ങൾ ഉപയോഗിച്ചുള്ള പരേഡും ചിട്ടയായ ക്ലാസ്സും നൽകുന്നു. ഒത്തൊരുമയും അച്ചടക്കവും (एकता और अनुशासन) എന്നതാണ് എൻ.സി.സി.യുടെ മുദ്രാവാക്യം. രാജ്യത്ത് എൻ.സി.സി. 1948 ജുലായ് 15-ന് സ്ഥാപിക്കപ്പെട്ടു. ഇന്ത്യൻ പ്രതിരോധ മന്ത്രാലയത്തിന് കീഴിലാണ് ഇത് പ്രവർത്തിക്കുന്നത്. സ്വഭാവഗുണം , ധൈര്യം , സഹവർത്തിത്വം , അച്ചടക്കം , നേതൃത്വഗുണം , മതേതര മനോഭാവം, സാഹസിക മനോഭാവം , കായിക മനോഭാവം എന്നിവ കൂടാതെ സന്നദ്ധ സേവനം മനോഭാവം വളർത്താനും നല്ലൊരു പൗരനാക്കി മാറ്റാനും എൻ.സി.സി. സഹായകമാണ്.
-
-എൻ.എ.എം സ്കൂളിൽ എൻ.സി.സി യുടെ വ്യോമ സേനാ വിങ്ങ് ആണ് ഉള്ളത്.
-        </p>
-        <button>Click Me</button>
-      </div>
-    </div>
-    <div class="section-container" style="background-color: rgb(255, 255, 255);">
-      <div class="section-image">
-        <img src="https://schoolwiki.in/images/b/b3/14031_jrc2.jpeg" alt="Image">
-      </div>
-      <div class="section-content">
-        <h2  style="color: rgb(0, 0, 0);">ജൂനിയർ റെഡ് ക്രോസ്</h2>
-        <p style="color: rgb(12, 11, 11);">
-          സേവന മേഖലയിൽ ഇതിനകം ലോകശ്രദ്ധ നേടിയ ജൂനിയർ റെഡ് ക്രോസിന്റെ ഒരു യൂനിറ്റ് സ്കൂളിൽ നല്ല രീതിയിൽ പ്രവർത്തിച്ചു വരുന്നു. 'ആരോഗ്യം, സൗഹൃദം, സേവനം' ഇവ ലക്ഷ്യമാക്കിക്കൊണ്ടുള്ള ജെ.ആർ.സി യൂനിറ്റിന് സ്കൂളിൽ വിവിധ സേവന പ്രവർത്തനങ്ങൾക്ക് നേതത്വം നൽകാൻ കഴിഞ്ഞിട്ടുണ്ട്. "നിർധന രോഗികൾക്ക് ഒരു കൈത്താങ്ങ് " - എന്ന പദ്ധതിയിലൂടെ കുട്ടികൾ വീടുകളിൽ നിന്ന് ഉപയോഗ ശേഷം ബാക്കി വരുന്ന മരുന്നുകൾ ശേഖരിച്ച് കരിയാട്,പുല്ലൂക്കര എന്നിവിടങ്ങളിലെ പെയ്ൻ ആന്റ് പാലിയേറ്റീവ് സെന്ററുകളിലൂടെ പാവപ്പെട്ട രോഗികൾക്ക് എത്തിക്കുന്നു.
-        </p>
-        <button>Click Me</button>
-      </div>
-    </div>
-
-
-    
-
-
-    
-    <div class="section-container" style="background-color: rgb(136, 122, 188);">
-      <div class="section-image">
-        <img src="https://schoolwiki.in/images/b/b0/14031_scout2.jpeg" alt="Image">
-      </div>
-      <div class="section-content">
-        <h2  style="color: white;">സ്കൗട്ട്&ഗൈഡ്സ്</h2>
-        <p style="color: white;">
-          സാമൂഹിക സേവനരംഗത്ത് വിദ്യാർത്ഥികളെ സുസജ്ജരാക്കുന്നതിനും വ്യക്തിത്വ വികാസവും ആത്മ വിശ്വാസവും കർ‍മ്മോൽസുകതയും വളർത്തിയെടുക്കുന്നതിനും വേണ്ടി 1907-ൽ ബേഡൻ പവ്വൽ പ്രഭു വിഭാവനം ചെയ്ത സ്കൗട്ട് & ഗൈഡ്സ് സ്ക്കൂളിൽ പ്രവർത്തിച്ച് വരുന്നു. കേരളത്തിലെ മികച്ച സ്കൗട്ട്സ് യൂനിറ്റാണ് എൻ.എ.എമ്മിലേത്. കേരളത്തിലെ മികച്ച സ്കൗട്ട് മാസ്റ്റർക്കുള്ള 2008-09 അധ്യയനവർഷത്തെ അവാർഡ് ജേതാവായ ശ്രീ. കെ പി ശ്രീധരൻ മാസ്റ്ററാണ് ട്രൂപ്പിനെ പരിശീലിപ്പിക്കുന്നത്. കാശ്മീരിൽ വെച്ച് നടന്ന അന്താരാഷ്ട്ര ക്യാംബിൽ പങ്കെടുക്കാൻ ഞങ്ങളുടെ സ്കൗട്ട്സ് യൂനറ്റിന് കഴിഞ്ഞിട്ടുണ്ട്. എല്ലാ വർ‍ഷവും യൂനിറ്റിലെ എല്ലാ സ്കൗട്ട്സിനും ഗൈഡ്സിനും "രാജ്യ പുരസ്ക്കാര്","രാഷ്ട്രപതി പുരസ്ക്കാർ" എന്നിവ ലഭിക്കാറുണ്ട്.‍
-        </p>
-        <button>Click Me</button>
-      </div>
-    </div>
-
-
-    
-
-
-    
-
-
-  
 
 
 
@@ -539,278 +206,38 @@
 
 
 
-  <script src="scripts.js"></script>
-</body>
-</html>
-
-<script>  function myFunction(imgs) {
-  var expandImg = document.getElementById("expandedImg");
-  var imgText = document.getElementById("imgtext");
-  expandImg.src = imgs.src;
-  imgText.innerHTML = imgs.alt;
-}
-
-/*
-inspiration 
-https://dribbble.com/shots/18492971-Web-Design-Portfolio
-*/</script>
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<script>
-  {
-    class SliderClip {
-      constructor(el) {
-        this.el = el;
-        this.Slides = Array.from(this.el.querySelectorAll('li'));
-        this.Nav = Array.from(this.el.querySelectorAll('aside a'));
-        this.totalSlides = this.Slides.length;
-        this.current = 0;
-        this.autoPlay = true; //true or false
-        this.timeTrans = 4000; //transition time in milliseconds
-        this.IndexElements = [];
-  
-        for (let i = 0; i < this.totalSlides; i++) {
-          this.IndexElements.push(i);
-        }
-  
-        this.setCurret();
-        this.initEvents();
-      }
-      setCurret() {
-        this.Slides[this.current].classList.add('current');
-        this.Nav[this.current].classList.add('current_dot');
-      }
-      initEvents() {
-        const self = this;
-  
-        this.Nav.forEach(dot => {
-          dot.addEventListener('click', ele => {
-            ele.preventDefault();
-            this.changeSlide(this.Nav.indexOf(dot));
-          });
-        });
-  
-        this.el.addEventListener('mouseenter', () => self.autoPlay = false);
-        this.el.addEventListener('mouseleave', () => self.autoPlay = true);
-  
-        setInterval(function () {
-          if (self.autoPlay) {
-            self.current = self.current < self.Slides.length - 1 ? self.current + 1 : 0;
-            self.changeSlide(self.current);
-          }
-        }, this.timeTrans);
-  
-      }
-      changeSlide(index) {
-  
-        this.Nav.forEach(allDot => allDot.classList.remove('current_dot'));
-  
-        this.Slides.forEach(allSlides => allSlides.classList.remove('prev', 'current'));
-  
-        const getAllPrev = value => value < index;
-  
-        const prevElements = this.IndexElements.filter(getAllPrev);
-  
-        prevElements.forEach(indexPrevEle => this.Slides[indexPrevEle].classList.add('prev'));
-  
-        this.Slides[index].classList.add('current');
-        this.Nav[index].classList.add('current_dot');
-      }}
-  
-  
-    const slider = new SliderClip(document.querySelector('.slider'));
-  }
-  
-
-  
-
-var TextSlider = function(){
-  this.container = $('#home-animation-wrapper');
-  this.currentSlide = 1;
-  this.slidesLength = this.container.find('.slide').length - 1; // To start at 0
-  this.content = { text1: '', text2: '', text3: ''};
-  
-  this.allowChange = true;
-  
-  this.init();
-};
-
-TextSlider.prototype = {
-  
-  init: function(){
-    console.log('init');
-    
-    this.bind();
-
-    this.initSvg();
-    
-  },
-  
-  bind: function(){
-    console.log('bind');
-
-    var self = this;
-    
-    // Bind interval
-    var timerDuration = 5000,
-        timer = setInterval(function(){
-          self.resetSlide();
-        }, timerDuration);
-
-    // Bind restart on click with next slide
-    this.container.on('click', function(){
-      
-      // Do not allow to change slide until last transition is complete
-      if(!self.allowChange){ return; }
-      self.allowChange = false;
-      setTimeout(function(){
-        self.allowChange = true;
-      }, 2000);
-      
-      self.resetSlide();
-      
-      clearInterval(timer);
-      timer = setInterval(function(){
-          self.resetSlide();
-        }, timerDuration);
-
-      
-    });
-    
-
-  },
-  
-  initSvg: function(){
-    console.log('initSvg');
-    
-    this.bubblesRandomColors();
-    this.setTexts();
-    this.bubblesMovement();
-    
-    // Trigger First slide
-    this.triggerSlide();
-  },
-  
-  setTexts: function(){
-    console.log('setTexts');
-    
-    var texts = this.container.find('#svg-texts');
-    
-    // Get texts
-    this.content.text1 = this.container.find('.slide[count="'+this.currentSlide+'"]').attr('data-1');
-    this.content.text2 = this.container.find('.slide[count="'+this.currentSlide+'"]').attr('data-2');
-    this.content.text3 = this.container.find('.slide[count="'+this.currentSlide+'"]').attr('data-3');
-    
-    // UpperCase Texts
-    this.content.text1 = this.content.text1.toUpperCase();
-    this.content.text2 = this.content.text2.toUpperCase();
-    this.content.text3 = this.content.text3.toUpperCase();
-    
-    // Append Texts
-    texts.find('text:nth-child(1)').html(this.content.text1);
-    texts.find('text:nth-child(2)').html(this.content.text2);
-    texts.find('text:nth-child(3)').html(this.content.text3);
-  },
-  
-  bubblesRandomColors: function(){
-    console.log('bubblesRandomColors');
-    
-    var bubblesGroup = this.container.find('#bubbles'),
-        // colors = ['#03ee93','#ff0700','#ffe700','#5306de'];
-        colors = ['#f5a147','#51cad8','#112b39'];
-    
-    bubblesGroup.find('path').each(function(){
-      var rand = getRand(0,colors.length);
-      TweenMax.set(this, { fill: colors[rand], scale: 0, transformOrigin: 'center' });
-    })    
-  },
-  
-  triggerSlide: function(){
-    console.log('triggerSlide');
-    
-    // Container loads invisible, needs this to be shown on the first iteration
-    TweenMax.set(this.container, { autoAlpha: 1 });
-
-    var bubbles =  this.container.find('#bubbles path');
-    bubbles.each(function(){
-      var rotateRand = getRand(-30,30);
-      TweenMax.to(this,1.5, { scale: 1.2, rotation: rotateRand, ease: Power2.easeInOut});
-    })
-  },
-  
-  resetSlide: function(){
-    console.log('hideSlide');
-
-    var self = this;
-    
-    this.currentSlide++;
-    if(this.currentSlide > this.slidesLength){ this.currentSlide = 0; };
-    
-    var bubbles = this.container.find('#bubbles path');
-    TweenMax.to(bubbles,1.5, { scale: 0, ease: Power2.easeInOut, onComplete: triggerContinue });
-    
-    // Workaround gsap onComplete
-    function triggerContinue(){
-      self.initSvg();
-    }
-  },
-  
-  // non used function (performance) (remove the 'return' to enable)
-  bubblesMovement: function(){
-    
-    return; // Yup, this one
-    
-    var bubbles = this.container.find('#bubbles path'),
-        count = 500;
-    
-    bubbles.each(function(index){
-      if(index > count ) { return; }
-      $(this).attr('data-rand', getRand(15, 25) );
-    });
-    
-    this.container.on('mousemove', function(e){
-      bubbles.each(function(){
-        if(!$(this).attr('data-rand')){ return; };
-        
-        var rand = $(this).attr('data-rand'),
-            cy = e.pageY,
-            cx = e.pageX,
-            py = Math.round($(this).offset().top),
-            px = Math.round($(this).offset().left),
-            x = Math.round(-(cx + px) / rand),
-            y = Math.round(-(cy + py) / rand);
-
-        TweenMax.to($(this), 0.2, { x: x, y: y, transformOrigin: 'center' });
-      });
-    })
-  }
-}
-
-function getRand(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min; 
-}
-
-
-</script>
-<script>// JavaScript to hide the preloader and show the content when everything is loaded
-  window.addEventListener('load', function () {
-    const preloaderContainer = document.querySelector('.preloader-container');
-    const mainContentContainer = document.querySelector('.container23333');
-  
-    // Hide the preloader and show the main content
-    preloaderContainer.style.display = 'none';
-    mainContentContainer.classList.add('loaded');
+  <script>document.getElementById('navbarToggle').addEventListener('click', function() {
+    var navbarLinks = document.querySelector('nav ul');
+    navbarLinks.classList.toggle('show');
   });
   </script>
 </body>
-
-
 </html>

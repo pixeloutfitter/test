@@ -3,231 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stellxr</title>
-  <!-- Add Bootstrap CSS link -->
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700&family=Schoolbell&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@700&family=PT+Serif:ital@1&family=Press+Start+2P&family=Schoolbell&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light" >
-        <a class="navbar-brand" href="#"><img src="https://schoolwiki.in/images/thumb/e/e0/Namlogoct.png/800px-Namlogoct.png" alt="" height="50px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#" style="color: rgb(0, 0, 0);  font-family: 'Schoolbell', cursive;">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"  style="color: rgb(1, 1, 1); font-family: 'Schoolbell', cursive;">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a style="color: rgb(15, 11, 11); font-family: 'Schoolbell', cursive;"class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clients
-              </a>
-              <div style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <a style="color:black; font-family: 'Schoolbell', cursive;" class="dropdown-item" href="#">Burger King</a>
-                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Southwest Airlines</a>
-                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Levi Strauss</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a style="color:black; font-family: 'Schoolbell', cursive;"class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Services
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Print Design</a>
-                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Web Design</a>
-                <a style="color:black; font-family: 'Schoolbell', cursive;"class="dropdown-item" href="#">Mobile App Development</a>
-              </div>
-            </li>
-            <li style="color:black; font-family: 'Schoolbell', cursive;"class="nav-item">
-              <a style="color:black; font-family: 'Schoolbell', cursive;"class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          <form class="form-inline navbar-form">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" style="background-color: black;">Search</button>
-          </form>
-        </div>
-      </nav>
-      
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="width: 100%;">
-    <div class="carousel-inner">
-      <div class="carousel-item active slider-container">
-        <img src="https://schoolwiki.in/images/b/bc/14031_atal3.jpeg" alt="Image 1" class="slider-img" style="width: 100%;">
-        <div class="overlay">
-            
-          <div class="overlay-text">NAM HSS PERINGATHUR</div>
-        </div>
+ 
+  <div class="top-bar bg-dark text-white" style="background-color: #00ccff;">
+    <div class="container d-flex justify-content-end align-items-center">
+      <div class="contact-info me-4">
+        <span class="me-2"><i class="fas fa-envelope"></i> example@gmail.com</span>
+        <span><i class="fas fa-phone"></i> +1234567890</span>
       </div>
-      <div class="carousel-item slider-container">
-        <img src="https://schoolwiki.in/images/5/53/14031_bus1.jpeg" alt="Image 2" class="slider-img">
-        <div class="overlay">
-          <div class="overlay-text">NAM HSS PERINGATHUR</div>
-        </div>
-      </div>
-
-      <div class="carousel-item slider-container">
-        <img src="https://schoolwiki.in/images/d/dd/Cover14031-2022.jpeg" alt="Image 2" class="slider-img">
-        <div class="overlay">
-          <div class="overlay-text">NAM HSS PERINGATHUR</div>
-        </div>
-      </div>
-      <!-- Add more carousel items as needed -->
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
-  <div class="flash-news">
-    <div class="red-bg">
-      <div class="latest-news">Latest News <span class="arrow"></span></div>
-    </div>
-    <marquee behavior="scroll" direction="left" style="font-family: 'Noto Sans Malayalam', sans-serif;">തിരുവനന്തപുരം (01.02.2023):സംസ്ഥാന തലത്തിൽ മികച്ച അധ്യാപകർക്ക് നൽകിവരുന്ന സാഹിതി ഇന്റർനാഷണൽ ടീച്ചർ ഐക്കൺ അവാർഡ് തിരുവനന്തപുരത്ത് വെച്ച് നടന്ന ചടങ്ങിൽ ബഹു: പ്രതിപക്ഷ നേതാവ് വി ഡി സതീശനിൽ നിന്നും ഹെഡ്‌മാസ്റ്റർ ശ്രീ. പത്മനാഭൻ നടമ്മൽ ഏറ്റുവാങ്ങി. ചടങ്ങിൽ വി സി കബീർ മാസ്റ്റർ, അഡ്വ. പഴകുളം മധു, ഡോ. എ എം ഉണ്ണികൃഷ്ണൻ, ബിന്നി സാഹിതി, നസീർ നൊച്ചാട്, റെജി കിഴക്കുംപുറം, സാം കുരക്കാർ എന്നിവർ സന്നിഹിതരായിരുന്നു.
-    </marquee>
-  </div>
-  
-
-  <section class="about-section" style="margin-top: -80px;">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="z-index: 1;">
     <div class="container">
-        <div class="row">                
-            <div class="content-column col-lg-6 col-md-12 col-sm-12 order-2">
-                <div class="inner-column">
-                    <div class="sec-title">
-                        <span class="title">About Us</span>
-                        <h2>N.A.M HSS <br>PERINGATHUR</h2>
-                    </div>
-                  <br><br>  <div class="text" style="color: black;">കണ്ണൂർ ജില്ലയിലെ തലശ്ശേരി വിദ്യാഭ്യാസ ജില്ലയിൽ ചൊക്ലി ഉപജില്ലയിലെ പെരിങ്ങത്തൂരിലുളള ഒരു എയ്‌ഡഡ്‌ ഹയർ സെക്കണ്ടറി സ്‌കൂളാണ് എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ. പാനൂർ മുനിസിപാലിറ്റിയിൽ കനകമലയുടെ താഴ്​വാരത്ത് പെരിങ്ങത്തൂർ പുഴയുടെ ഓരം ചേർന്ന് പെരിങ്ങത്തൂർ പട്ടണത്തിൽ കടവത്തൂർ റോഡിൽ പെരിങ്ങളം നിയസഭാ മണ്ഡലത്തിലെ ജനകീയനും, വാഗ്മിയും, സർവ്വോപരി നാടിന്റെ വികസന നായകനുമായ മുൻ നിയമസഭാ അംഗം ജനാബ്. എൻ.എ മമ്മു ഹാജിയുടെ നാമധേയത്തിൽ അതി മനോഹരമായ മൂന്നുനില കെട്ടിടത്തിൽ എൻ.എ.എം ഹയർ സെക്കണ്ടറി സ്ക്കൂൾ പ്രവർത്തിക്കുന്നു.</div>
-                    <ul class="list-style-one">
-                        <li>എസ് എസ് എൽ സി പരീക്ഷയിൽ നൂറു ശതമാനം വിജയം</li>
-                        <li>വിദ്യാഭ്യാസ വകുപ്പ്, ഐ.ടി അറ്റ് സ്ക്കൂൾ - ഹരിത വിദ്യാലയം റിയാലിറ്റി ഷോയിൽ നാലാമതെത്തിയ സ്ക്കൂൾ. ഹരിത വിദ്യാലയം ട്രോഫി, പ്രശസ്തി പത്രം,ക്യാഷ് പ്രൈസ് എന്നിവ ലഭിച്ചു.</li>
-                        <li>രണ്ടാമത് ശബരീഷ് സ്മാരക സ്കൂൾ വിക്കി പുരസ്കാരം - 2021-22 (ജില്ലാ തലം - മൂന്നാം സ്ഥാനം - കണ്ണൂർ ജില്ല)</li>
-                    </ul>
-                    <div class="btn-box">
-                        <a href="#" class="theme-btn btn-style-one">About  Us</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Image Column -->
-            <div class="image-column col-lg-6 col-md-12 col-sm-12">
-                <div class="inner-column wow fadeInLeft">
-                    <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images" ><img src="assets/14031_bus1.jpeg" alt="" style="max-width: 100%;
-                      height: auto;"></a></figure><br><br><br>
-                    <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="  assets/2slider.jpeg" alt=" " style="max-width: 100%;
-                      height: auto;"></a></figure>
-                      <figure class="image-2"><a href="#" class="lightbox-image" data-fancybox="images"><img src="  assets/2slider.jpeg" alt=" " style="max-width: 100%;
-                        height: auto;"></a></figure>
-                </div>
-            </div>
-        </div>
+      <a class="navbar-brand" href="#">
+        <img src="3-removebg-preview.png" alt="Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <div class="search">
+            <input placeholder="Search..." type="text">
+            <button type="submit">Go</button>
+          </div>
+    
+        </form>
+      </div>
     </div>
+  </nav>
+  <section class="" > 
+
+
+
+    <img src="Untitled design (1).png" alt=""  class="hd">
+
+<div class="text-box">
+
+<div style="margin-top: -200px;">
+          <br><br> <h1  class="hd1">
+            Pixel
+            <font style="color: #00ccff; font-size: 40px;font-family: 'Press Start 2P', cursive;">
+            Outfitter</font></h1>
+        <b> <p class="hd2"  > Do you have an idea and want to make it true?.
+            We bring ideas to life with creative services at budget-friendly rates, sometimes even free. Our expertise covers posters, logos, websites, apps, games, and animations. Our portfolio showcases our quality work, serving startups, small businesses, and individuals. We're known for transparent pricing, commitment to quality, and on-time delivery. Explore our online presence to make your vision a reality.</p></b> 
+            </div>
+           <p style="text-align: justify; " ><h1 class="hd3">Want your own <span class="input"></span></h1>
+            </p>
+            <a href="" class="btn-header"><button class="cssbuttons-io-button" > Get started
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
+              </div>
+            </button></a>
+</div>
+
 </section>
-<br><br><div class="body222">
-  <div class="marquee">
-    <div class="marquee__group">
-      <img src='https://schoolwiki.in/images/c/c6/Thangal.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/9/98/Haritha1.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/5/55/Tirur0.jpg/800px-Tirur0.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/4/4d/Pkn_sa.jpg/800px-Pkn_sa.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/7/74/Scoutpresident.jpg/800px-Scoutpresident.jpg' alt=''>
-    </div>
-  
-    <div aria-hidden="true" class="marquee__group">
-      <img src='https://schoolwiki.in/images/c/c6/Thangal.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/9/98/Haritha1.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/5/55/Tirur0.jpg/800px-Tirur0.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/4/4d/Pkn_sa.jpg/800px-Pkn_sa.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/7/74/Scoutpresident.jpg/800px-Scoutpresident.jpg' alt=''>
-    </div>
-  </div>
-  
-  <div class="marquee marquee--borders" style="--duration: 100s">
-    <div class="marquee__group">
-      <p>THE STORY OF GLORY</p>
-      <p aria-hidden="true">TTHE STORY OF GLORY</p>
-      <p aria-hidden="true">THE STORY OF GLORY</p>
-    </div>
-  
-    <div aria-hidden="true" class="marquee__group">
-      <p>THE STORY OF GLORY</p>
-      <p>THE STORY OF GLORY</p>
-      <p>THE STORY OF GLORYh</p>
-    </div>
-  </div>
-  
- <div class="marquee marquee--reverse">
-    <div class="marquee__group">
-      <img src='https://schoolwiki.in/images/thumb/c/cd/Onam140311.jpg/800px-Onam140311.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/9/9e/Namnp1.jpg/1024px-Namnp1.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/c/cd/Phdnar.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/5/57/14031_sahithi.jpg/1024px-14031_sahithi.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/9/95/Namwiki1.jpg' alt=''>
-    </div>
-  
-    <div aria-hidden="true" class="marquee__group">
-      <img src='https://schoolwiki.in/images/thumb/c/cd/Onam140311.jpg/800px-Onam140311.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/9/9e/Namnp1.jpg/1024px-Namnp1.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/c/cd/Phdnar.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/thumb/b/b1/14031_office.jpg/1024px-14031_office.jpg' alt=''>
-      <img src='https://schoolwiki.in/images/9/95/Namwiki1.jpg' alt=''>
-    </div>
-  </div>
-  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>document.getElementById('navbarToggle').addEventListener('click', function() {
-    var navbarLinks = document.querySelector('nav ul');
-    navbarLinks.classList.toggle('show');
-  });
-  </script>
 </body>
+
+
+<script>
+  // Simulate content loading
+  window.addEventListener('load', () => {
+    const preloader = document.querySelector('.preloader');
+    preloader.classList.add('hide');
+  });
+</script>
+
+<script>var typed = new Typed('.input', {
+  strings: ["Website?", "App?", "Poster?", "Video"],
+  typeSpeed: 100,
+  backSpeed:100,
+  loop:true,
+});</script>
 </html>
